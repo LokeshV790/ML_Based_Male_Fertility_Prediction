@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertility Prediction</title>
+</head>
+<body>
+    <h1>Fertility Prediction</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <label for="abstinence_time">Abstinence time (days):</label>
+        <input type="number" step="0.1" name="abstinence_time" required><br><br>
+
+        <label for="bmi">Body Mass Index (kg/m²):</label>
+        <input type="number" step="0.1" name="bmi" required><br><br>
+
+        <label for="age">Age (years):</label>
+        <input type="number" name="age" required><br><br>
+
+        <label for="sperm_vitality">Sperm Vitality (%):</label>
+        <input type="number" step="0.1" name="sperm_vitality" required><br><br>
+
+        <label for="total_sperm_count">Total Sperm Count (x10⁶):</label>
+        <input type="number" step="0.1" name="total_sperm_count" required><br><br>
+
+        <label for="normal_sperm">Normal Spermatozoa (%):</label>
+        <input type="number" step="0.1" name="normal_sperm" required><br><br>
+
+        <label for="teratozoospermia_index">Teratozoospermia Index:</label>
+        <input type="number" step="0.1" name="teratozoospermia_index" required><br><br>
+
+        <label for="video_file">Upload Video:</label>
+        <input type="file" name="video_file" accept="video/*" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
